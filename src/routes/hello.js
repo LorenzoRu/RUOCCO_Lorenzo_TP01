@@ -2,10 +2,10 @@
  * @type { import("fastify").RouteHandlerMethod }
  */
 
-export function hello (req, reply) {
+export function hello(req, reply) {
     const message = req.query.name
-    ? `Hello ${req.query.name}`
-    : 'Hello world';
+        ? `Hello ${req.query.name}`
+        : 'Hello world';
 
-    reply.send({message});
+    reply.send({ message });
 }
